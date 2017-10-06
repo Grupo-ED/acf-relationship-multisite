@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( 'acf_plugin_FIELD_NAME' ) ) :
+if ( ! class_exists( 'acf_relationship_multisite' ) ) :
 	class acf_relationship_multisite {
 		/*
 		*  __construct
