@@ -70,7 +70,7 @@ if ( ! class_exists( 'acf_field_relationship_multisite' ) ) :
 
 		function input_admin_enqueue_scripts() {
 
-			$dir = plugin_dir_url( __FILE__ );
+			$dir = dirname( plugin_dir_url( __FILE__ ) );
 
 			// register & include JS
 			wp_register_script( 'acf-relationship_multisite', "{$dir}js/input.js" );
