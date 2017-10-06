@@ -69,7 +69,7 @@ if ( ! class_exists( 'acf_plugin_FIELD_NAME' ) ) :
 			}
 
 			// include
-			include_once( 'acf-relationship-multisite-v' . $version . '.php' );
+			include_once( 'fields/acf-relationship-multisite-v' . $version . '.php' );
 		}
 	}
 
