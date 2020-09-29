@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Advanced Custom Fields: Relationship Multisite
-Plugin URI: https://github.com/tmconnect/acf-relationship-multisite
+Plugin URI: https://github.com/schrauger/acf-relationship-multisite
 Description: Get post, pages and custom post types from another site of your WordPress Multisite installation. This plugin needs the installation/activation of Advanced Custom Fields V5.
-Version: 1.1.02 (>= ACF 5.2.7)
-Author: Thomas Meyer, Silvia Ulenberg
-Author URI: www.dreihochzwo.de, https://www.silviaulenberg.de
+Version: 1.2.0 (>= ACF 5.9.1)
+Author: Thomas Meyer, Silvia Ulenberg, Stephen Schrauger
+Author URI: www.dreihochzwo.de, https://www.silviaulenberg.de, https://www.schrauger.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -33,7 +33,7 @@ if ( ! class_exists( 'acf_relationship_multisite' ) ) :
 
 			// vars
 			$this->settings = array(
-				'version' => '1.0.0',
+				'version' => '1.1.0',
 				'url'     => plugin_dir_url( __FILE__ ),
 				'path'    => plugin_dir_path( __FILE__ )
 			);

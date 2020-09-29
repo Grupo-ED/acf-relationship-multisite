@@ -1,8 +1,8 @@
 {
-  "name": "asfaloth-de/acf-relationship-multisite",
+  "name": "schrauger/acf-relationship-multisite",
   "description": "Get post, pages and custom post types from another site of your WordPress Multisite installation. This plugin needs the installation/activation of Advanced Custom Fields V5.",
   "keywords": ["wordpress", "plugin"],
-  "homepage": "https://github.com/AsfalothDE/acf-relationship-multisite",
+  "homepage": "https://github.com/schrauger/acf-relationship-multisite",
   "license": "MIT",
   "authors": [
     {
@@ -13,6 +13,11 @@
       "name": "Silvia Ulenberg",
       "email": "kontakt@silviaulenberg.de",
       "homepage": "https://www.silviaulenberg.de"
+    },
+    {
+      "name": "Stephen Schrauger",
+      "email": "acf-relationship-multisite@schrauger.com",
+      "homepage": "https://www.schrauger.com"
     }
   ],
   "type": "wordpress-plugin",

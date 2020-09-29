@@ -776,6 +776,33 @@ if ( ! class_exists( 'acf_field_relationship_multisite' ) ) :
 				'placeholder'  => __( "Select site", 'acf-relationship-multisite' ),
 			) );
 
+			// post_type
+			acf_render_field_setting( $field, array(
+				'label'        => __( 'Filter by Post Type', 'acf' ),
+				'instructions' => '',
+				'type'         => 'select',
+				'name'         => 'post_type',
+				'choices'      => acf_get_pretty_post_types(),
+				'multiple'     => 1,
+				'ui'           => 1,
+				'allow_null'   => 1,
+				'placeholder'  => __( "All post types", 'acf' ),
+			) );
+
+
+			// taxonomy
+			acf_render_field_setting( $field, array(
+				'label'        => __( 'Filter by Taxonomy', 'acf' ),
+				'instructions' => '',
+				'type'         => 'select',
+				'name'         => 'taxonomy',
+				'choices'      => acf_get_taxonomy_terms(),
+				'multiple'     => 1,
+				'ui'           => 1,
+				'allow_null'   => 1,
+				'placeholder'  => __( "All taxonomies", 'acf' ),
+			) );
+
 			// filters
 			acf_render_field_setting( $field, array(
 				'label'        => __( 'Filters', 'acf' ),
@@ -805,6 +832,14 @@ if ( ! class_exists( 'acf_field_relationship_multisite' ) ) :
 
 				$field['max'] = '';
 			}
+
+			// min
+			acf_render_field_setting( $field, array(
+				'label'        => __( 'Minimum posts', 'acf' ),
+				'instructions' => '',
+				'type'         => 'number',
+				'name'         => 'min',
+			) );
 
 			acf_render_field_setting( $field, array(
 				'label'        => __( 'Maximum posts', 'acf' ),
